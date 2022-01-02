@@ -95,10 +95,10 @@ select {
   --fw-bold: 700;
 }
 
-/*  TODO: 1️⃣ Change heading color to magenta and see the line-height and font size and all the stuff related to it 
-    TODO: 2️⃣ Repeat the star background 5 times and center it with text and change the color of the text to designated color  
-    TODO: 3️⃣ Change the color of the text of the paragraph of after the heading 
-    ! Import font family and weights of the family text 
+/*  TODO: 1️⃣ Change heading color to magenta and see the line-height and font size and all the stuff related to it
+    TODO: 2️⃣ Repeat the star background 5 times and center it with text and change the color of the text to designated color
+    TODO: 3️⃣ Change the color of the text of the paragraph of after the heading
+    ! Import font family and weights of the family text
 
 /* ----------------------- STYLING ---------------------- */
 body {
@@ -180,7 +180,7 @@ body {
 .profile-img {
   width: max(41px,3rem);
   border-radius: 100%;
-} 
+}
 
 .testimonial {
   display: grid;
