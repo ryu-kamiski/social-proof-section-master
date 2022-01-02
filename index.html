@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Social proof section</title>
@@ -24,30 +24,63 @@
 </head>
 
 <body>
-  10,000+ of our users love our products.
+  <div class="container">
+    <div class="container__content">
+      <h2>10,000+ of our users love our products.</h2>
+      <p>
+        We only provide great products combined with excellent customer service.
+        See what our satisfied customers are saying about our services.
+      </p>
+    </div>
+    <div class="review">
+      <div class="review__rated"><img src="img/icon-star.svg" alt="Stars"> Rated 5 Stars in Reviews</div>
+      <div class="review__rated"><img src="img/icon-star.svg" alt="Stars"> Rated 5 Stars in Report Guru</div>
+      <div class="review__rated"><img src="img/icon-star.svg" alt="Stars"> Rated 5 Stars in BestTech</div>
+    </div>
 
-  We only provide great products combined with excellent customer service.
-  See what our satisfied customers are saying about our services.
-
-  Rated 5 Stars in Reviews
-  Rated 5 Stars in Report Guru
-  Rated 5 Stars in BestTech
-
-  Colton Smith
-  Verified Buyer
-  "We needed the same printed design as the one we had ordered a week prior.
-  Not only did they find the original order, but we also received it in time.
-  Excellent!"
-
-  Irene Roberts
-  Verified Buyer
-  "Customer service is always excellent and very quick turn around. Completely
-  delighted with the simplicity of the purchase and the speed of delivery."
-
-  Anne Wallace
-  Verified Buyer
-  "Put an order with this company and can only praise them for the very high
-  standard. Will definitely use them again and recommend them to everyone!"
+    <div class="testimonial">
+      <div class="testimonial__container">
+        <div class="profile">
+          <img src="img/image-colton.jpg" alt="profile" class="profile-img">
+          <span class="profile__name">
+            Colton Smith
+            <span class="verify-btn">Verified Buyer</span>
+          </span>
+        </div>
+        <p>
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+        </p>
+      </div>
+      <div class="testimonial__container">
+        <div class="profile">
+          <img src="img/image-irene.jpg" alt="profile" class="profile-img">
+          <span class="profile__name">
+            Irene Roberts
+            <span class="verify-btn">Verified Buyer</span>
+          </span>
+        </div>
+        <p>
+          "Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+        </p>
+      </div>
+      <div class="testimonial__container">
+        <div class="profile">
+          <img src="img/image-anne.jpg" alt="profile" class="profile-img">
+          <span class="profile__name">
+            Anne Wallace
+            <span class="verify-btn">Verified Buyer</span>
+          </span>
+        </div>
+        <p>
+          "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+        </p>
+      </div>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded with

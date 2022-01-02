@@ -94,3 +94,58 @@ select {
   --fw-medium: 500;
   --fw-bold: 700;
 }
+
+/*  TODO: 1️⃣ Change heading color to magenta and see the line-height and font size and all the stuff related to it 
+    TODO: 2️⃣ Repeat the star background 5 times and center it with text and change the color of the text to designated color  
+    TODO: 3️⃣ Change the color of the text of the paragraph of after the heading 
+    ! Import font family and weights of the family text 
+
+/* ----------------------- STYLING ---------------------- */
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-body);
+}
+
+.container {
+  width: max(90vw,90%);
+}
+
+
+.profile {
+  display: flex;
+  gap: max(20px,1.4rem);
+  color: var(--clr-neutral-white);
+}
+
+.profile__name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3565;
+}
+
+.profile-img {
+  width: max(41px,3rem);
+  border-radius: 100%;
+} 
+
+.testimonial {
+  display: grid;
+  gap: min(16px,1.066666666666667rem);
+}
+
+.testimonial__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 34px;
+  border-radius: 10px;
+  color: var(--clr-neutral-white);
+  background-color: var(--clr-primary-magenta);
+}
+
+.verify-btn {
+  color: var(--clr-primary-pink);
+}
