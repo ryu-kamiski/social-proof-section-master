@@ -102,11 +102,6 @@ select {
 
 /* ----------------------- STYLING ---------------------- */
 body {
-  width: max(100vw,100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: var(--fs-body);
 }
 
@@ -114,8 +109,8 @@ body {
   position: relative;
   display: grid;
   gap: min(45px,3.5rem);
-  width: 90vw;
-  min-height: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 .container__content {
