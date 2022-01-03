@@ -75,6 +75,9 @@ select {
 }
 
 
+/* ---------------- FONT FAMILY IMPORTED ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
 
 /* -------------------- CSS VARIABLES ------------------- */
 :root {
