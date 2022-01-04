@@ -16,6 +16,7 @@
 style-guide.md 
 package.json 
 package-lock.json 
+bs-config.js
 
 # Logs
 logs
