@@ -105,15 +105,16 @@ select {
 
 /* ----------------------- STYLING ---------------------- */
 body {
+  margin: auto;
   font-size: var(--fs-body);
 }
 
 .container {
+  width: clamp(100px,65vw,450px);
   position: relative;
   display: grid;
   gap: min(45px,3.5rem);
-  width: 80%;
-  margin: auto;
+  margin: 3rem auto;
 }
 
 .container__content {
@@ -125,9 +126,9 @@ body {
 }
 
 .container__content h1 {
-  margin: auto;
+  max-width: clamp(12rem,16.3rem,20rem);
+  margin: 0 auto;
   line-height: 0.85;
-  font-weight: var(--fw-bold);
   color: var(--clr-primary-magenta);
 }
 
@@ -146,10 +147,19 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 1rem;
+  padding: 1em;
   border-radius: 10px;
   font-weight: var(--fw-bold);
   background-color: var(--clr-neutral-magenta-light);
+}
+
+.stars {
+  width: 85px;
+  height: 20px;
+  display: block;
+  margin: auto;
+  background-image: url(/img/icon-star.svg);
+  background-repeat: repeat-x;
 }
 
 .review__rated img {
