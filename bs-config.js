@@ -16,5 +16,3 @@ bs.init({
 	}
 });
 bs.watch(['index.html', 'style.css'], {ignored: '*.map.css'});
-
-//console.log('Hello World!');
