@@ -4,6 +4,7 @@ bs.init({
 	server: "",
 	files: ['index.html', 'style.css'],
 	port: 8000,
+	browser: "firefox",
 
 	ui: {
 		port:8001
