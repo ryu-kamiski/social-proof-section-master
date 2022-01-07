@@ -1,10 +1,10 @@
-@use '../abstracts/index';
+@use '../abstracts/abstracts' as abs;
 
 .testimonial__container {
-  background-color: index.$primary-dark-magenta;
+  background-color: abs.$primary-dark-magenta;
 
   & p {
-    color: index.$neutral-white;
+    color: abs.$neutral-white;
   }
 
   & .profile {
@@ -14,12 +14,12 @@
     }
 
     & .profile__name {
-      color: index.$neutral-white;
-      font-weight: map-get(index.$font-weight, bold );
+      color: abs.$neutral-white;
+      font-weight: map-get(abs.$font-weight, bold );
 
       & .verify-btn {
-        color: index.$primary-pink;
-        font-weight: map-get(index.$font-weight, normal);
+        color: abs.$primary-pink;
+        font-weight: map-get(abs.$font-weight, normal);
       }
     }
   }
