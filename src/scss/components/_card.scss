@@ -1,0 +1,26 @@
+@use '../abstracts/abstracts' as abs;
+
+.testimonial__container {
+  background-color: abs.$primary-dark-magenta;
+
+  & p {
+    color: abs.$neutral-white;
+  }
+
+  & .profile {
+
+    & img {
+      border-radius: 50%;
+    }
+
+    & .profile__name {
+      color: abs.$neutral-white;
+      font-weight: map-get(abs.$font-weight, bold );
+
+      & .verify-btn {
+        color: abs.$primary-pink;
+        font-weight: map-get(abs.$font-weight, normal);
+      }
+    }
+  }
+}
