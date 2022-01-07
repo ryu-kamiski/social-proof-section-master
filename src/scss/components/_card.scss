@@ -1,0 +1,26 @@
+@use '../abstracts/index';
+
+.testimonial__container {
+  background-color: index.$primary-dark-magenta;
+
+  & p {
+    color: index.$neutral-white;
+  }
+
+  & .profile {
+
+    & img {
+      border-radius: 50%;
+    }
+
+    & .profile__name {
+      color: index.$neutral-white;
+      font-weight: map-get(index.$font-weight, bold );
+
+      & .verify-btn {
+        color: index.$primary-pink;
+        font-weight: map-get(index.$font-weight, normal);
+      }
+    }
+  }
+}

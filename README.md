@@ -26,11 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Solution](./SolutionScreenshot/DesktopSolution.png) vs ![Mobile Solution](./SolutionScreenshot/MobileSolution.png)
+![Desktop Solution](./SolutionScreenshot/DesktopSolution.png) 
+![Mobile Solution](./SolutionScreenshot/MobileSolution.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://your-solution-url.com)
 - Live Site URL: [Live Site](https://ryu-kamiski.github.io/)
 
 ## My process
