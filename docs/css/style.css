@@ -73,27 +73,115 @@ select {
     scroll-behavior: auto !important;
   }
 }
-body {
+html {
   font-family: "Spartan", sans-serif;
   font-size: 15px;
 }
 
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  margin-top: 2.67em;
+  margin-bottom: 2.67em;
+}
+
 .testimonial__container {
+  width: min(80vw, 23.33rem);
+  padding: 2.26em;
+  border-radius: 0.8rem;
   background-color: #502050;
 }
 .testimonial__container p {
-  color: white;
+  color: #f7f2f7;
+}
+.testimonial__container .profile {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6em;
 }
 .testimonial__container .profile img {
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
 }
 .testimonial__container .profile .profile__name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
   color: white;
   font-weight: 700;
 }
 .testimonial__container .profile .profile__name .verify-btn {
   color: #ee68a4;
   font-weight: 400;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review__rated {
+  width: min(80vw, 444px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1.06em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  color: #502050;
+  font-weight: 700;
+  background-color: #f7f2f7;
+}
+.review__rated .stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.53em;
+}
+
+footer {
+  text-align: center;
+}
+
+.attribution {
+  display: inline-block;
+  margin: auto;
+  font-size: 13px;
+  color: #937b92;
+}
+.attribution a {
+  text-decoration: none;
+  color: #ee68a4;
+}
+.attribution a:hover, .attribution a:focus {
+  text-decoration: underline;
+}
+
+body {
+  background: url(../../img/bg-pattern-top-mobile.svg) no-repeat top left, url(../../img/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+  background-attachment: fixed;
+}
+
+.container__content {
+  width: min(80%, 427px);
+  margin: 0 auto;
+  text-align: center;
+}
+.container__content h1 {
+  margin-top: 80px;
+  line-height: 1;
+  color: #502050;
+}
+.container__content p {
+  margin-top: 24px;
+  margin-bottom: 46px;
+  font-weight: 400;
+  color: #937b92;
 }
 
 /*# sourceMappingURL=style.css.map */

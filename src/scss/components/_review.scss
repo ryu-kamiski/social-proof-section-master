@@ -1,0 +1,29 @@
+@use '../abstracts/abstracts' as abs;
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review__rated {
+  width: min(80vw, 444px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1.06em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  color: abs.$primary-dark-magenta;
+  font-weight: map-get(abs.$font-weight, bold);
+  background-color: abs.$neutral-light-magenta;
+
+  & .stars {
+    display: flex;
+    justify-content: center;
+    gap: .53em;
+  }
+
+}

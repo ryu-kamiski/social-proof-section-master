@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Solution](./SolutionScreenshot/DesktopSolution.png) 
-![Mobile Solution](./SolutionScreenshot/MobileSolution.png)
+![Desktop Solution]() 
+![Mobile Solution]()
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/fluid-width-social-proof-section-vPmYB1Q_N)
 - Live Site URL: [Live Site](https://ryu-kamiski.github.io/)
 
 ## My process
