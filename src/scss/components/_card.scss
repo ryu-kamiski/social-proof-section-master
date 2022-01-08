@@ -1,19 +1,39 @@
 @use '../abstracts/abstracts' as abs;
 
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  margin-top: 2.67em;
+  margin-bottom: 2.67em;
+}
+
 .testimonial__container {
+  width: #{"min(80vw, 23.33rem)"};
+  padding: 2.26em;
+  border-radius: 0.8rem;
   background-color: abs.$primary-dark-magenta;
 
   & p {
-    color: abs.$neutral-white;
+    color: abs.$neutral-light-magenta;
   }
 
   & .profile {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6em;
 
     & img {
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
     }
 
     & .profile__name {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2em;
       color: abs.$neutral-white;
       font-weight: map-get(abs.$font-weight, bold );
 
