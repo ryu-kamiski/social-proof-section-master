@@ -16,6 +16,7 @@
 style-guide.md 
 package.json 
 package-lock.json 
+gulpfile.js
 
 # Logs
 logs
