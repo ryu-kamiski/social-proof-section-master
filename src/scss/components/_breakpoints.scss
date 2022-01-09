@@ -1,0 +1,123 @@
+@use 'variables' as var;
+@use '../abstracts/fonts' as font;
+
+// Mobile Breakpoint
+@mixin mobile {
+  @media (min-width: var.$mobile) {
+    @content;
+  }
+}
+// Mobile max breakpoint
+@mixin mobilemax {
+  @media (max-width: var.$tablet) {
+    @content;
+  }
+}
+// Tablet breakpoint
+@mixin tablet {
+  @media (min-width: var.$tablet) {
+    @content;
+  }
+}
+// Tablet max breakpoint
+@mixin tabletmax {
+  @media (max-width: var.$tablet) {
+    @content;
+  }
+}
+// Desktop breakpoint
+@mixin desktop {
+  @media (min-width: var.$desktop) {
+    @content;
+  }
+}
+
+body {
+  @include mobile {
+    font-size: calc(font.$font-size + 2px);
+  }
+  @include mobilemax {
+    background: url(../../img/bg-pattern-top-mobile.svg) no-repeat top left, url(../../img/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+    background-attachment: fixed;
+
+    .container__content {
+      & h1 {
+        margin-top: 3.5em;
+      }
+    }
+  }
+  @include tablet {
+    background: url(../../img/bg-pattern-top-desktop.svg) no-repeat top left, url(../../img/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+    background-attachment: fixed;
+
+    .container__content {
+      & h1 {
+        margin-top: 3.5em;
+      }
+    }
+  }
+}
+
+@include tabletmax {
+  .container__content {
+    & h1 {
+      margin-top: 3.5em;
+    }
+  }
+}
+
+.review {
+  & .review__rated {
+    @include tablet {
+      flex-direction: row;
+      gap: 1.3em;
+    }
+  }
+}
+
+@include desktop {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: min(75%, 74.6em);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    & .container__content {
+      width: 80%;
+      text-align: left;
+      margin: 0;
+
+      & h1 {
+        margin-top: 0;
+      }
+    }
+
+    & .review .review__rated:nth-child(2) {
+      margin-left: 3.06em;
+    }
+    & .review .review__rated:nth-child(3) {
+      margin-left: 6.13em;
+    }
+  }
+
+  .testimonial {
+    flex-direction: row;
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    & .testimonial__container:nth-child(2) {
+      margin-top: 1.06em;
+    }
+    & .testimonial__container:nth-child(3) {
+      margin-top: 2.13em;
+    }
+  }
+}

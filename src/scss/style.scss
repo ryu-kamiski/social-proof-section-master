@@ -1,18 +1,12 @@
 @use 'resets/resets';
-@use 'components/components';
+@use 'components/components' as compo;
 @use 'abstracts/abstracts' as abs;
-
-body {
-  background: url(../../img/bg-pattern-top-mobile.svg) no-repeat top left, url(../../img/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
-  background-attachment: fixed;
-}
 
 .container__content {
   width: min(80%, 427px);
   margin: 0 auto;
   text-align: center;
   & h1 {
-    margin-top: 80px;
     line-height: 1;
     color: abs.$primary-dark-magenta;
   }

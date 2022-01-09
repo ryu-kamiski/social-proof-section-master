@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -20,37 +18,31 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
 ol[role=list] {
   list-style: none;
 }
 
-/* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -58,7 +50,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -88,7 +79,7 @@ html {
 }
 
 .testimonial__container {
-  width: min(80vw, 23.33rem);
+  width: min(80%, 23.33rem);
   padding: 2.26em;
   border-radius: 0.8rem;
   background-color: #502050;
@@ -144,8 +135,87 @@ html {
   gap: 0.53em;
 }
 
+@media (min-width: 42.6em) {
+  body {
+    font-size: 17px;
+  }
+}
+@media (max-width: 67em) {
+  body {
+    background: url(../../img/bg-pattern-top-mobile.svg) no-repeat top left, url(../../img/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+    background-attachment: fixed;
+  }
+  body .container__content h1 {
+    margin-top: 3.5em;
+  }
+}
+@media (min-width: 67em) {
+  body {
+    background: url(../../img/bg-pattern-top-desktop.svg) no-repeat top left, url(../../img/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+    background-attachment: fixed;
+  }
+  body .container__content h1 {
+    margin-top: 3.5em;
+  }
+}
+
+@media (max-width: 67em) {
+  .container__content h1 {
+    margin-top: 3.5em;
+  }
+}
+@media (min-width: 67em) {
+  .review .review__rated {
+    flex-direction: row;
+    gap: 1.3em;
+  }
+}
+
+@media (min-width: 89em) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: min(75%, 74.6em);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .container .container__content {
+    width: 80%;
+    text-align: left;
+    margin: 0;
+  }
+  .container .container__content h1 {
+    margin-top: 0;
+  }
+  .container .review .review__rated:nth-child(2) {
+    margin-left: 3.06em;
+  }
+  .container .review .review__rated:nth-child(3) {
+    margin-left: 6.13em;
+  }
+
+  .testimonial {
+    flex-direction: row;
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .testimonial .testimonial__container:nth-child(2) {
+    margin-top: 1.06em;
+  }
+  .testimonial .testimonial__container:nth-child(3) {
+    margin-top: 2.13em;
+  }
+}
 footer {
   text-align: center;
+  margin-top: 2em;
 }
 
 .attribution {
@@ -162,18 +232,12 @@ footer {
   text-decoration: underline;
 }
 
-body {
-  background: url(../../img/bg-pattern-top-mobile.svg) no-repeat top left, url(../../img/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
-  background-attachment: fixed;
-}
-
 .container__content {
   width: min(80%, 427px);
   margin: 0 auto;
   text-align: center;
 }
 .container__content h1 {
-  margin-top: 80px;
   line-height: 1;
   color: #502050;
 }
